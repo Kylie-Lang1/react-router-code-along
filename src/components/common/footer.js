@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import NewsLetter from "../pages/newsletter";
+
 export default function Footer() {
   const year = new Date().getFullYear()
     return (
@@ -5,10 +8,10 @@ export default function Footer() {
         <p>I Love Light. All Rights Reserved {year}</p>
         <ul>
           <li>
-
+            <Link to="/about">About</Link>
           </li>
           <li>
-
+            <Link to="/newsletter">Newsletter</Link>
           </li>
         </ul>
       </footer>
